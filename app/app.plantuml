@@ -1,0 +1,491 @@
+@startuml
+
+title __APP's Class Diagram__\n
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.authentication {
+      class BaseActivity {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    class BuildConfig {
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.authentication {
+      class ChooserActivity {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.views {
+      class DailyMealsListFragment {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.views {
+      class DailySummaryActivity {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.models {
+      class Dining {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.authentication {
+      class EmailPasswordActivity {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    class ExampleInstrumentedTest {
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.repositories {
+      class FirebaseRepository {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.views {
+      class GadgetsFragment {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.authentication {
+      class GoogleSignInActivity {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.models {
+      class Meal {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.views {
+      class MealDetailsActivity {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.views {
+      class MealDetailsFragment {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.uiutils {
+      interface Navigator {
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    class R {
+    }
+  }
+  
+
+  package android.support.v7.cardview {
+    class R {
+    }
+  }
+  
+
+  package com.google.firebase {
+    package com.google.firebase.measurement {
+      class R {
+      }
+    }
+  }
+  
+
+  package com.firebase.ui.auth {
+    class R {
+    }
+  }
+  
+
+  package com.google.firebase {
+    package com.google.firebase.firebase_core {
+      class R {
+      }
+    }
+  }
+  
+
+  package android.support.compat {
+    class R {
+    }
+  }
+  
+
+  package com.google.android.gms.stats {
+    class R {
+    }
+  }
+  
+
+  package android.support.fragment {
+    class R {
+    }
+  }
+  
+
+  package android.arch.core {
+    class R {
+    }
+  }
+  
+
+  package com.google.android.gms.base {
+    class R {
+    }
+  }
+  
+
+  package android.support.constraint {
+    class R {
+    }
+  }
+  
+
+  package android.support.coreui {
+    class R {
+    }
+  }
+  
+
+  package me.zhanghai.android.materialprogressbar {
+    class R {
+    }
+  }
+  
+
+  package com.google.android.gms.flags {
+    class R {
+    }
+  }
+  
+
+  package com.google.android.gms.common {
+    class R {
+    }
+  }
+  
+
+  package android.arch.lifecycle {
+    package android.arch.lifecycle.viewmodel {
+      class R {
+      }
+    }
+  }
+  
+
+  package android.support.customtabs {
+    class R {
+    }
+  }
+  
+
+  package com.google.firebase {
+    package com.google.firebase.firestore {
+      class R {
+      }
+    }
+  }
+  
+
+  package com.google.android.gms.ads_identifier {
+    class R {
+    }
+  }
+  
+
+  package com.google.firebase {
+    package com.google.firebase.analytics.connector {
+      class R {
+      }
+    }
+  }
+  
+
+  package android.support.v7.recyclerview {
+    class R {
+    }
+  }
+  
+
+  package com.google.android.gms.auth {
+    class R {
+    }
+  }
+  
+
+  package android.support.transition {
+    class R {
+    }
+  }
+  
+
+  package android.arch.lifecycle {
+    package android.arch.lifecycle.livedata {
+      package android.arch.lifecycle.livedata.core {
+        class R {
+        }
+      }
+    }
+  }
+  
+
+  package android.arch.lifecycle {
+    package android.arch.lifecycle.extensions {
+      class R {
+      }
+    }
+  }
+  
+
+  package android.support.coreutils {
+    class R {
+    }
+  }
+  
+
+  package com.google.firebase {
+    package com.google.firebase.measurement {
+      package com.google.firebase.measurement_impl {
+        class R {
+        }
+      }
+    }
+  }
+  
+
+  package com.google.firebase {
+    package com.google.firebase.analytics.connector {
+      package com.google.firebase.analytics.connector.impl {
+        class R {
+        }
+      }
+    }
+  }
+  
+
+  package com.google.android.gms.auth {
+    package com.google.android.gms.auth.api {
+      package com.google.android.gms.auth.api.phone {
+        class R {
+        }
+      }
+    }
+  }
+  
+
+  package android.arch.lifecycle {
+    package android.arch.lifecycle.livedata {
+      class R {
+      }
+    }
+  }
+  
+
+  package android.support.design {
+    class R {
+    }
+  }
+  
+
+  package android.support.graphics.drawable {
+    package android.support.graphics.drawable.animated {
+      class R {
+      }
+    }
+  }
+  
+
+  package firebase.com.protolitewrapper {
+    class R {
+    }
+  }
+  
+
+  package com.google.android.gms.tasks {
+    class R {
+    }
+  }
+  
+
+  package com.google.firebase {
+    package com.google.firebase.iid {
+      class R {
+      }
+    }
+  }
+  
+
+  package com.google.firebase {
+    package com.google.firebase.database.collection {
+      class R {
+      }
+    }
+  }
+  
+
+  package com.google.android.gms.measurement_base {
+    class R {
+    }
+  }
+  
+
+  package com.google.firebase {
+    class R {
+    }
+  }
+  
+
+  package com.google.firebase {
+    package com.google.firebase.iid {
+      package com.google.firebase.iid.internal {
+        class R {
+        }
+      }
+    }
+  }
+  
+
+  package com.google.firebase {
+    package com.google.firebase.auth {
+      package com.google.firebase.auth.internal {
+        class R {
+        }
+      }
+    }
+  }
+  
+
+  package android.support.v7.appcompat {
+    class R {
+    }
+  }
+  
+
+  package com.google.android.gms.auth {
+    package com.google.android.gms.auth.api {
+      class R {
+      }
+    }
+  }
+  
+
+  package com.google.firebase {
+    package com.google.firebase.auth {
+      class R {
+      }
+    }
+  }
+  
+
+  package android.support.mediacompat {
+    class R {
+    }
+  }
+  
+
+  package android.arch.lifecycle {
+    class R {
+    }
+  }
+  
+
+  package android.support.v4 {
+    class R {
+    }
+  }
+  
+
+  package android.support.graphics.drawable {
+    class R {
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.repositories {
+      package com.deviantsatyr.healthy.repositories.base {
+        interface Repository {
+        }
+      }
+    }
+  }
+  
+
+  BaseActivity -up-|> AppCompatActivity
+  ChooserActivity -up-|> OnItemClickListener
+  ChooserActivity -up-|> AppCompatActivity
+  DailyMealsListFragment -up-|> OnItemClickListener
+  DailyMealsListFragment -up-|> Fragment
+  DailyMealsListFragment o-- Navigator : navigator
+  DailyMealsListFragment o-- Navigator : mNavigator
+  DailySummaryActivity -up-|> Navigator
+  DailySummaryActivity -up-|> Activity
+  DailySummaryActivity o-- DailyMealsListFragment : mDailyMealsListFragment
+  DailySummaryActivity o-- GadgetsFragment : mGadgetsFragment
+  DailySummaryActivity o-- MealDetailsFragment : mMealDetailsFragment
+  EmailPasswordActivity -up-|> OnClickListener
+  EmailPasswordActivity -up-|> BaseActivity
+  FirebaseRepository -up-|> Repository
+  GadgetsFragment -up-|> Fragment
+  GoogleSignInActivity -up-|> OnClickListener
+  GoogleSignInActivity -up-|> BaseActivity
+  MealDetailsActivity -up-|> Activity
+  MealDetailsActivity o-- MealDetailsFragment : mMealDetailsFragment
+  MealDetailsFragment -up-|> Fragment
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

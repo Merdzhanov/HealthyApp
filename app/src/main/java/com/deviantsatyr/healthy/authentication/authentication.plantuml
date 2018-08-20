@@ -1,0 +1,280 @@
+@startuml
+
+title __AUTHENTICATION's Class Diagram__\n
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.authentication {
+      class BaseActivity {
+          + mProgressDialog : ProgressDialog
+          + showProgressDialog()
+          + hideProgressDialog()
+          + hideKeyboard()
+          + onStop()
+      }
+    }
+  }
+  
+
+  package android.support.v4 {
+    class HostCallbacks {
+        + HostCallbacks()
+        + onDump()
+        + onShouldSaveFragmentState()
+        + onGetLayoutInflater()
+        + onGetHost()
+        + onSupportInvalidateOptionsMenu()
+        + onStartActivityFromFragment()
+        + onStartActivityFromFragment()
+        + onStartIntentSenderFromFragment()
+        + onRequestPermissionsFromFragment()
+        + onShouldShowRequestPermissionRationale()
+        + onHasWindowAnimations()
+        + onGetWindowAnimations()
+        + onAttachFragment()
+        + onFindViewById()
+        + onHasView()
+    }
+  }
+  
+
+  package android.support.v4 {
+    class NonConfigurationInstances {
+        ~ custom : Object
+        ~ viewModelStore : ViewModelStore
+        ~ fragments : FragmentManagerNonConfig
+        ~ NonConfigurationInstances()
+    }
+  }
+  
+
+  package android.support.v4 {
+    class ExtraData {
+        + ExtraData()
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.authentication {
+      class ChooserActivity {
+          {static} - CLASSES : Class[]
+          {static} - DESCRIPTION_IDS : int[]
+          # onCreate()
+          + onItemClick()
+      }
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.authentication {
+      class MyArrayAdapter {
+          - mContext : Context
+          - mClasses : Class[]
+          - mDescriptionIds : int[]
+          + MyArrayAdapter()
+          + getView()
+          + setDescriptionIds()
+      }
+    }
+  }
+  
+
+  package android.support.v4 {
+    class HostCallbacks {
+        + HostCallbacks()
+        + onDump()
+        + onShouldSaveFragmentState()
+        + onGetLayoutInflater()
+        + onGetHost()
+        + onSupportInvalidateOptionsMenu()
+        + onStartActivityFromFragment()
+        + onStartActivityFromFragment()
+        + onStartIntentSenderFromFragment()
+        + onRequestPermissionsFromFragment()
+        + onShouldShowRequestPermissionRationale()
+        + onHasWindowAnimations()
+        + onGetWindowAnimations()
+        + onAttachFragment()
+        + onFindViewById()
+        + onHasView()
+    }
+  }
+  
+
+  package android.support.v4 {
+    class NonConfigurationInstances {
+        ~ custom : Object
+        ~ viewModelStore : ViewModelStore
+        ~ fragments : FragmentManagerNonConfig
+        ~ NonConfigurationInstances()
+    }
+  }
+  
+
+  package android.support.v4 {
+    class ExtraData {
+        + ExtraData()
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.authentication {
+      class EmailPasswordActivity {
+          {static} - TAG : String
+          - mStatusTextView : TextView
+          - mDetailTextView : TextView
+          - mEmailField : EditText
+          - mPasswordField : EditText
+          - mAuth : FirebaseAuth
+          + onCreate()
+          + onStart()
+          - createAccount()
+          - signIn()
+          - signOut()
+          - sendEmailVerification()
+          - validateForm()
+          - updateUI()
+          + onClick()
+      }
+    }
+  }
+  
+
+  package android.support.v4 {
+    class HostCallbacks {
+        + HostCallbacks()
+        + onDump()
+        + onShouldSaveFragmentState()
+        + onGetLayoutInflater()
+        + onGetHost()
+        + onSupportInvalidateOptionsMenu()
+        + onStartActivityFromFragment()
+        + onStartActivityFromFragment()
+        + onStartIntentSenderFromFragment()
+        + onRequestPermissionsFromFragment()
+        + onShouldShowRequestPermissionRationale()
+        + onHasWindowAnimations()
+        + onGetWindowAnimations()
+        + onAttachFragment()
+        + onFindViewById()
+        + onHasView()
+    }
+  }
+  
+
+  package android.support.v4 {
+    class NonConfigurationInstances {
+        ~ custom : Object
+        ~ viewModelStore : ViewModelStore
+        ~ fragments : FragmentManagerNonConfig
+        ~ NonConfigurationInstances()
+    }
+  }
+  
+
+  package android.support.v4 {
+    class ExtraData {
+        + ExtraData()
+    }
+  }
+  
+
+  package com.deviantsatyr.healthy {
+    package com.deviantsatyr.healthy.authentication {
+      class GoogleSignInActivity {
+          {static} - TAG : String
+          {static} - RC_SIGN_IN : int
+          - mAuth : FirebaseAuth
+          - mGoogleSignInClient : GoogleSignInClient
+          - mStatusTextView : TextView
+          - mDetailTextView : TextView
+          # onCreate()
+          + onStart()
+          + onActivityResult()
+          - firebaseAuthWithGoogle()
+          - signIn()
+          - signOut()
+          - revokeAccess()
+          - updateUI()
+          + onClick()
+      }
+    }
+  }
+  
+
+  package android.support.v4 {
+    class HostCallbacks {
+        + HostCallbacks()
+        + onDump()
+        + onShouldSaveFragmentState()
+        + onGetLayoutInflater()
+        + onGetHost()
+        + onSupportInvalidateOptionsMenu()
+        + onStartActivityFromFragment()
+        + onStartActivityFromFragment()
+        + onStartIntentSenderFromFragment()
+        + onRequestPermissionsFromFragment()
+        + onShouldShowRequestPermissionRationale()
+        + onHasWindowAnimations()
+        + onGetWindowAnimations()
+        + onAttachFragment()
+        + onFindViewById()
+        + onHasView()
+    }
+  }
+  
+
+  package android.support.v4 {
+    class NonConfigurationInstances {
+        ~ custom : Object
+        ~ viewModelStore : ViewModelStore
+        ~ fragments : FragmentManagerNonConfig
+        ~ NonConfigurationInstances()
+    }
+  }
+  
+
+  package android.support.v4 {
+    class ExtraData {
+        + ExtraData()
+    }
+  }
+  
+
+  BaseActivity -up-|> AppCompatActivity
+  BaseActivity +-down- HostCallbacks
+  BaseActivity +-down- NonConfigurationInstances
+  BaseActivity +-down- ExtraData
+  HostCallbacks -up-|> FragmentHostCallback
+  ChooserActivity -up-|> OnItemClickListener
+  ChooserActivity -up-|> AppCompatActivity
+  ChooserActivity +-down- MyArrayAdapter
+  ChooserActivity +-down- HostCallbacks
+  ChooserActivity +-down- NonConfigurationInstances
+  ChooserActivity +-down- ExtraData
+  MyArrayAdapter -up-|> ArrayAdapter
+  HostCallbacks -up-|> FragmentHostCallback
+  EmailPasswordActivity -up-|> OnClickListener
+  EmailPasswordActivity -up-|> BaseActivity
+  EmailPasswordActivity +-down- HostCallbacks
+  EmailPasswordActivity +-down- NonConfigurationInstances
+  EmailPasswordActivity +-down- ExtraData
+  HostCallbacks -up-|> FragmentHostCallback
+  GoogleSignInActivity -up-|> OnClickListener
+  GoogleSignInActivity -up-|> BaseActivity
+  GoogleSignInActivity +-down- HostCallbacks
+  GoogleSignInActivity +-down- NonConfigurationInstances
+  GoogleSignInActivity +-down- ExtraData
+  HostCallbacks -up-|> FragmentHostCallback
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
